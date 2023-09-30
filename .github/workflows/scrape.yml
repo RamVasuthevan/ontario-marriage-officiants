@@ -20,7 +20,8 @@ jobs:
 
       - name: Download File
         run: |
-          curl -o ontario-marriage-officiants/registered_marriage_officiants.csv https://data.ontario.ca/dataset/38ddc983-1bf0-4bee-ad18-07dac8cfe884/resource/e010f610-c3d6-4f88-849b-6f8c11e98d9c/download/registered_marriage_officiants.csv
+          # Use a user-agent string to mimic Google Chrome
+          curl -o ontario-marriage-officiants/registered_marriage_officiants.csv -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" https://data.ontario.ca/dataset/38ddc983-1bf0-4bee-ad18-07dac8cfe884/resource/e010f610-c3d6-4f88-849b-6f8c11e98d9c/download/registered_marriage_officiants.csv
 
       - name: Commit and Push if Files Changed
         run: |
