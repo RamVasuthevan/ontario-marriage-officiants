@@ -30,4 +30,5 @@ jobs:
           git add registered_marriage_officiants.csv
           timestamp=$(date -u)
           git commit -m "Downloaded: ${timestamp}: commit: ${{github.sha}}" || exit 0
-          git push
+          # Use force push to push changes
+          git push --force
