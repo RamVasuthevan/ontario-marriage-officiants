@@ -1,4 +1,4 @@
-# ontario-marriage-officiants
+# Ontario Marriage Officiants
 
 - [Git Scraping](https://simonwillison.net/2020/Oct/9/git-scraping/) inspired by Simon Willison
 
