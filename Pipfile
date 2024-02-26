@@ -5,11 +5,11 @@ name = "pypi"
 
 [packages]
 jupyter = "1.0.0"
-pandas = "2.1.1"
+pandas = "2.2.1"
 
 
 [dev-packages]
-black = {extras = ["jupyter"], version = "23.9.1"}
+black = {extras = ["jupyter"], version = "24.2.0"}
 
 [requires]
 python_version = "3.11.5"
